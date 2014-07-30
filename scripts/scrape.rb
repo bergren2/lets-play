@@ -1,5 +1,6 @@
 # More info here: https://github.com/bergren2/lp-pokemon-blue/wiki/Collecting-Data
 require 'mechanize'
+require 'json'
 
 # Grab each name, type(s) and returns as a hash
 def get_basic_data
@@ -29,5 +30,9 @@ def get_basic_data
   return hash
 end
 
-### RUN
-p get_basic_data
+# creates JSON file from scraped data
+def create_json
+  File.open('data/pokemon.json', 'w+') do |f|
+    f << JSON.pretty_generate(get_basic_data)
+  end
+end
