@@ -38,4 +38,4 @@ and you can see the site at [localhost:4567](http://localhost:4567).
 ## License
 
 See LICENSE for additional details regarding this project EXCEPT for data
-contained in the `_data` directory, which is &copy; Pokémon/Nintendo/Creatures Inc./GAME FREAK inc.
+contained in the `_data` directory, which is Copyright Pokémon/Nintendo/Creatures Inc./GAME FREAK inc.
