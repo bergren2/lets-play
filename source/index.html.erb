@@ -1,10 +1,12 @@
 ---
-title: Welcome to Middleman
+title: Let's Play Pokémon Blue
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<h1>Let's Play Pokémon Blue</h1>
+<% data.pokemon.each do |key, value| %>
+  <div>
+    <%= value.name %>
+    <%= link_to 'Location', "http://bulbapedia.bulbagarden.net/wiki/#{value.name}#Game_locations" %>
+    <%= link_to 'Learnset', "http://bulbapedia.bulbagarden.net/wiki/#{value.name}_(Pok%C3%A9mon)/Generation_I_learnset" %>
+  </div>
+<% end %>
