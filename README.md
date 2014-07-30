@@ -18,7 +18,10 @@ You should have the following minimally setup:
     $ cd $_
     $ rbenv install
     $ gem install bundler
-    $ bundle install
+    $ bundle install --without scraping
+
+If you need to use [Mechanize](https://github.com/sparklemotion/mechanize) to
+gather additional data, do a normal `bundle install`.
 
 ## Development
 
