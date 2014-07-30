@@ -1,6 +1,6 @@
 # lp-pokemon-blue
 
-A quick reference guide I threw together to help me with my Let's Play of Pokémon Blue.
+A quick reference guide I threw together to help me with my [Let's Play of Pokémon Blue](https://www.youtube.com/playlist?list=PLdXSy09brydzoqynDtibx_V8WDB1MULK2).
 This site uses [Middleman](http://middlemanapp.com/) which we then host on
 [GitHub Pages](https://pages.github.com/).
 
