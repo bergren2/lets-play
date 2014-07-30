@@ -15,3 +15,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 # For scraping data
 gem "mechanize", group: [:scraping]
+
+# For deploying to GitHub Pages
+gem "middleman-gh-pages"
