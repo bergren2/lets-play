@@ -35,6 +35,10 @@ Fire up
 
 and you can see the site at [localhost:4567](http://localhost:4567).
 
+## Deployment
+
+    $ rake publish
+
 ## License
 
 See LICENSE for additional details regarding this project EXCEPT for data
