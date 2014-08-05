@@ -41,17 +41,31 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def pokemon_names
+    array = []
+    data.pokemon.each do |key, value|
+      array << value['name']
+    end
+    return array
+  end
+
+  def link_to_location_for(pokemon)
+    "http://bulbapedia.bulbagarden.net/wiki/#{pokemon}#Game_locations"
+  end
+
+  def link_to_learnset_for(pokemon)
+    "http://bulbapedia.bulbagarden.net/wiki/#{pokemon}_(Pok%C3%A9mon)/Generation_I_learnset"
+  end
+end
 
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+sprockets.append_path File.join root, 'bower_components'
 
 # Build-specific configuration
 configure :build do

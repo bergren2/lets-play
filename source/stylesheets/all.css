@@ -52,3 +52,17 @@ h1 {
     -webkit-transform: scale(1);
   }
 }
+
+.tt-suggestion {
+  line-height: 18px; }
+  .tt-suggestion p {
+    margin: 0; }
+
+.tt-dropdown-menu {
+  background: white;
+  width: 100%; }
+
+.tt-cursor {
+  background: black;
+  color: white; }
+}

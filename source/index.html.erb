@@ -3,10 +3,9 @@ title: Let's Play Pokémon Blue
 ---
 
 <h1>Let's Play Pokémon Blue</h1>
-<% data.pokemon.each do |key, value| %>
-  <div>
-    <%= value.name %>
-    <%= link_to 'Location', "http://bulbapedia.bulbagarden.net/wiki/#{value.name}#Game_locations" %>
-    <%= link_to 'Learnset', "http://bulbapedia.bulbagarden.net/wiki/#{value.name}_(Pok%C3%A9mon)/Generation_I_learnset" %>
-  </div>
-<% end %>
+
+<div id="search">
+  <input class="typeahead" type="text" autofocus="autofocus" placeholder="Search Pokémon">
+</div>
+<div id="results">
+</div>
